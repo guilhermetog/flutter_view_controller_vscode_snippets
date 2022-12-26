@@ -4,10 +4,10 @@ Está é uma extensão que incorpora snippets para a criação de Views e Contro
 
 # Snippets
 
-## Criar um controller
+## Para criar um controller
 ### fcont
 
-´´´dart
+```dart
 import 'package:flutter_view_controller/flutter_view_controller.dart';
 
 class MyController extends Controller {
@@ -17,12 +17,12 @@ class MyController extends Controller {
   @override
   onClose() {}
 }
-´´´
+```
 
-## Criar uma view
+## Para criar uma view
 ### fview
 
-´´´dart
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_view_controller/flutter_view_controller.dart';
 import 'controller.dart';
@@ -35,14 +35,14 @@ class MyView extends View<MyController> {
     return Container();
   }
 }
-´´´
+```
 
 
 
-## Criar uma view
+## Para criar uma página
 ### fpage
 
-´´´dart
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_view_controller/flutter_view_controller.dart';
 import 'controller.dart';
@@ -55,4 +55,4 @@ class MyView extends View<MyController> {
     return Container();
   }
 }
-´´´
+```
