@@ -1,0 +1,50 @@
+{
+    "controller": {
+        "prefix": "fcont",
+        "body": [
+            "import 'package:flutter_view_controller/flutter_view_controller.dart';",
+            "",
+            "class ${1:My}Controller extends Controller {",
+            "\t@override",
+            "\tonInit() {}",
+            "",
+            "\t@override",
+            "\tonClose() {}",
+            "}",
+        ]
+    },
+    "view": {
+        "prefix": "fview",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_view_controller/flutter_view_controller.dart';",
+            "import 'controller.dart';",
+            "",
+            "class ${1:My}View extends View<${1:My}Controller> {",
+            "\t${1:My}View({required ${1:My}Controller controller}) : super(controller: controller);",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn Container();",
+            "\t}",
+            "}",
+        ]
+    },
+    "page": {
+        "prefix": "fpage",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:flutter_view_controller/flutter_view_controller.dart';",
+            "import 'controller.dart';",
+            "",
+            "class ${1:My}View extends View<${1:My}Controller> {",
+            "\t${1:My}View() : super(controller: ${1:My}Controller());",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn Container();",
+            "\t}",
+            "}",
+        ]
+    }
+}
