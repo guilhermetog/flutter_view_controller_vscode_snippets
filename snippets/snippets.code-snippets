@@ -30,15 +30,23 @@
             "}",
         ]
     },
-    "page": {
-        "prefix": "fpage",
+    "pack": {
+        "prefix": "fvc",
         "body": [
-            "import 'package:flutter/material.dart';",
             "import 'package:flutter_view_controller/flutter_view_controller.dart';",
-            "import 'controller.dart';",
+            "import 'package:flutter/material.dart';",
+            "",
+            "class ${1:My}Controller extends Controller {",
+            "\t@override",
+            "\tonInit() {}",
+            "",
+            "\t@override",
+            "\tonClose() {}",
+            "}",
+            "",
             "",
             "class ${1:My}View extends View<${1:My}Controller> {",
-            "\t${1:My}View() : super(controller: ${1:My}Controller());",
+            "\t${1:My}View({required ${1:My}Controller controller}) : super(controller: controller);",
             "",
             "\t@override",
             "\tWidget build(BuildContext context) {",
@@ -46,5 +54,5 @@
             "\t}",
             "}",
         ]
-    }
+    },
 }

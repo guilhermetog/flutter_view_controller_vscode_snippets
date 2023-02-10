@@ -37,18 +37,23 @@ class MyView extends View<MyController> {
 }
 ```
 
-
-
-## Para criar uma página
-### fpage
+## Para criar tudo na mesma pagina
+### fvc
 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_view_controller/flutter_view_controller.dart';
-import 'controller.dart';
+
+class MyController extends Controller {
+  @override
+  onInit() {}
+
+  @override
+  onClose() {}
+}
 
 class MyView extends View<MyController> {
-  MyView() : super(controller: MyController());
+  MyView({required MyController controller}) : super(controller: controller);
 
   @override
   Widget build(BuildContext context) {
@@ -56,3 +61,5 @@ class MyView extends View<MyController> {
   }
 }
 ```
+
+
