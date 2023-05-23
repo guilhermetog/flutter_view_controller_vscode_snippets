@@ -10,4 +10,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 0.0.3
 
-- Add one page snipped
+- Add one page snippet
+
+## 0.0.4
+
+- Add named route builder snippet

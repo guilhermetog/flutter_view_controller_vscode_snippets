@@ -55,4 +55,10 @@
             "}",
         ]
     },
+    "route": {
+        "prefix": "rt",
+        "body": [
+            "\"${1:Page}View\": (context) => ${1:Page}View(controller:  Controller.register(${1:My}Controller())),",
+        ]
+    }
 }
