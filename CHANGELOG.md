@@ -15,3 +15,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.0.4
 
 - Add named route builder snippet
+
+## 0.0.5
+
+- Removed individual snippets
+- Changed fvc snippet to create ViewOf, according to 0.1.6 fvc version
+- Created fvcold for create View, for backward compatibility

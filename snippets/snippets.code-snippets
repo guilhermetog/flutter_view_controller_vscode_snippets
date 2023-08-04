@@ -1,8 +1,9 @@
 {
-    "controller": {
-        "prefix": "fcont",
+    "pack": {
+        "prefix": "fvc",
         "body": [
             "import 'package:flutter_view_controller/flutter_view_controller.dart';",
+            "import 'package:flutter/material.dart';",
             "",
             "class ${1:My}Controller extends Controller {",
             "\t@override",
@@ -11,16 +12,9 @@
             "\t@override",
             "\tonClose() {}",
             "}",
-        ]
-    },
-    "view": {
-        "prefix": "fview",
-        "body": [
-            "import 'package:flutter/material.dart';",
-            "import 'package:flutter_view_controller/flutter_view_controller.dart';",
-            "import 'controller.dart';",
             "",
-            "class ${1:My}View extends View<${1:My}Controller> {",
+            "",
+            "class ${1:My}View extends ViewOf<${1:My}Controller> {",
             "\t${1:My}View({required ${1:My}Controller controller}) : super(controller: controller);",
             "",
             "\t@override",
@@ -30,8 +24,8 @@
             "}",
         ]
     },
-    "pack": {
-        "prefix": "fvc",
+    "pack_old": {
+        "prefix": "fvcold",
         "body": [
             "import 'package:flutter_view_controller/flutter_view_controller.dart';",
             "import 'package:flutter/material.dart';",
