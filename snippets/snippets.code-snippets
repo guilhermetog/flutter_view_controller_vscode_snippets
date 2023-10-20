@@ -15,7 +15,7 @@
             "",
             "",
             "class ${1:My}View extends ViewOf<${1:My}Controller> {",
-            "\t${1:My}View({required ${1:My}Controller controller}) : super(controller: controller);",
+            "\t${1:My}View({required super.controller, super.size});",
             "",
             "\t@override",
             "\tWidget build(BuildContext context) {",

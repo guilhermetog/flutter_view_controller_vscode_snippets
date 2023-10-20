@@ -21,3 +21,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Removed individual snippets
 - Changed fvc snippet to create ViewOf, according to 0.1.6 fvc version
 - Created fvcold for create View, for backward compatibility
+
+## 0.0.6
+
+- Changed fvc snippet do create a ViewOf with super.size
+
+## 0.0.7
+
+- Bugfix in fvc snippet ViewOf
