@@ -54,5 +54,44 @@
         "body": [
             "\"${1:Page}View\": (context) => ${1:Page}View(controller:  Controller.register(${1:My}Controller())),",
         ]
+    },
+    "ent": {
+        "prefix": "ent",
+        "body": [     
+            "import 'package:ent/ent.dart';",
+            "",
+            "class ${1:My}Ent extends Ent {",
+            "\t@override",
+            "\tget props => {};",
+            "", 
+            "\t@override",
+            "\tget events => {};",
+            "}"
+        ]
+    },
+    "entView": {
+        "prefix": "entview",
+        "body": [          
+            "import 'package:entview/entview.dart';",
+            "",
+            "class ${1:My}Ent extends Ent {",
+            "\t@override",
+            "\tget props => {};",
+            "", 
+            "\t@override",
+            "\tget events => {};",
+            "}",
+            "",
+            "class ${1:My}View extends EntView<${1:My}Ent> {",
+            "\t${1:My}View(super.ent, {super.key}) {",
+            "\t\tsync([]);",
+            "\t}",
+            "",
+            "\t@override",
+            "\tWidget render(BuildContext context) {",
+            "\t\treturn SizedBox.shrink();",
+            "\t}",
+            "}"
+        ]
     }
 }

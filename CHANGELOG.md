@@ -29,3 +29,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.0.7
 
 - Bugfix in fvc snippet ViewOf
+
+
+## 0.0.8
+
+- Added snippets for the new library Ent (ent, entview)
