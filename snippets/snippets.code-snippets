@@ -55,43 +55,28 @@
             "\"${1:Page}View\": (context) => ${1:Page}View(controller:  Controller.register(${1:My}Controller())),",
         ]
     },
-    "ent": {
-        "prefix": "ent",
-        "body": [     
-            "import 'package:ent/ent.dart';",
+    "ui_component": {
+        "prefix": "ui",
+        "body": [          
+            "import 'package:flutter/material.dart'",
+            "import 'package:flutter_view_controller/flutter_view_controller.dart';",
             "",
-            "class ${1:My}Ent extends Ent {",
+            "class ${1:MyComponent} extends UIComponent {",
             "\t@override",
-            "\tget props => {};",
-            "", 
-            "\t@override",
-            "\tget events => {};",
-            "}"
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn const SizedBox();",
+            "\t}",
+            "}",
         ]
     },
-    "entView": {
-        "prefix": "entview",
+    "layout_ui": {
+        "prefix": "layout",
         "body": [          
-            "import 'package:entview/entview.dart';",
-            "",
-            "class ${1:My}Ent extends Ent {",
-            "\t@override",
-            "\tget props => {};",
-            "", 
-            "\t@override",
-            "\tget events => {};",
-            "}",
-            "",
-            "class ${1:My}View extends EntView<${1:My}Ent> {",
-            "\t${1:My}View(super.ent, {super.key}) {",
-            "\t\tsync([]);",
-            "\t}",
-            "",
-            "\t@override",
-            "\tWidget render(BuildContext context) {",
-            "\t\treturn SizedBox.shrink();",
-            "\t}",
-            "}"
+            "LayoutUI(",
+            "\theight: height(100),",
+            "\twidth: width(100),",
+            "\tchild: ${1:MyComponent},",
+            ")",
         ]
     }
 }

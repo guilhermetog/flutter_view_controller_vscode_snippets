@@ -34,3 +34,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.0.8
 
 - Added snippets for the new library Ent (ent, entview)
+
+## 0.0.9
+
+- Removed snippets for the library Ent in favor of the simplest one (UIComponent)
+- added ui to build a UIComponent
+- added layout to build a LayoutUI widget
