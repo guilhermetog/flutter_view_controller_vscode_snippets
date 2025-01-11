@@ -40,3 +40,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Removed snippets for the library Ent in favor of the simplest one (UIComponent)
 - added ui to build a UIComponent
 - added layout to build a LayoutUI widget
+
+## 0.1.0
+
+- Bugfix in ui snippet

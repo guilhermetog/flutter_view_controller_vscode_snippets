@@ -57,8 +57,8 @@
     },
     "ui_component": {
         "prefix": "ui",
-        "body": [          
-            "import 'package:flutter/material.dart'",
+        "body": [
+            "import 'package:flutter/material.dart';",
             "import 'package:flutter_view_controller/flutter_view_controller.dart';",
             "",
             "class ${1:MyComponent} extends UIComponent {",
@@ -71,7 +71,7 @@
     },
     "layout_ui": {
         "prefix": "layout",
-        "body": [          
+        "body": [
             "LayoutUI(",
             "\theight: height(100),",
             "\twidth: width(100),",

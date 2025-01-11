@@ -4,7 +4,7 @@
   "description": "Snipptes para criação de views e controllers em Flutter (utiliza a lib flutter_view_controller)",
   "publisher": "guilhermetog",
   "icon": "icon.png",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.0.0"
   },
